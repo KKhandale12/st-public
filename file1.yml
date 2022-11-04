@@ -1,0 +1,21 @@
+--- 
+- name: shubham
+  hosts: all
+  vars: 
+   a: "first 1"
+   b: "second 2"
+  tasks:
+   - name: task-1
+     vars:
+      a: "third 3"
+     debug:
+       msg: "{{a}}"
+
+   - name: task-2
+     vars:
+      b: "forth 4"
+     debug:
+       msg: "{{b}}"
+
+   
+...   
