@@ -1,7 +1,6 @@
 ---
 - name: diksha
-  hosts: webserver
-
+  hosts: localhost
   #vars_files:
   #- data.yml
 
